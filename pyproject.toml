@@ -12,7 +12,7 @@ requests = "^2.29.0"
 
 [[tool.poetry.source]]
 name = "codeberg"
-url = "https://codeberg.org/api/packages/0xMRTT/pypi"
+url = "https://codeberg.org/api/packages/Bavarder/pypi"
 default = false
 secondary = true
 
