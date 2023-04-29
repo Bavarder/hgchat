@@ -10,6 +10,12 @@ python = "^3.10"
 requests = "^2.29.0"
 
 
+[[tool.poetry.source]]
+name = "codeberg"
+url = "https://codeberg.org/api/packages/0xMRTT/pypi"
+default = false
+secondary = true
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
