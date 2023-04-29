@@ -11,7 +11,7 @@ pip install hgchat
 ### As an interactive prompt
 
 ``` shell
-git clone https://github.com/Bavarder/hgchat.git
+git clone https://codeberg.org/0xMRTT/hgchat.git
 cd hgchat
 ```
 
