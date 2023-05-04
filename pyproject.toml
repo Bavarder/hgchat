@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hgchat"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["0xMRTT <0xMRTT@proton.me>"]
 readme = "README.md"
