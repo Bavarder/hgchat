@@ -95,12 +95,17 @@ class HGChat:
         for chunk in r.iter_content(chunk_size=None):
             data = chunk.decode("utf-8")
             if chunk:
-                data = json.loads(chunk[5:])
-                if "error" not in data:
-                    yield data
-                else:
-                    print("error: ", data["error"])
-                    break
+                try:
+                    data = json.loads(chunk[5:].strip())
+                    if "error" not in data:
+                        yield data
+                    else:
+                        print("error: ", data["error"])
+                        break
+                except json.decoder.JSONDecodeError:
+                    # sometimes the response is not valid json
+                    # like b'' 
+                    pass
 
 if __name__ == "__main__":
     chat = HGChat()
