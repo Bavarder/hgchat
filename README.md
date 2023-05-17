@@ -1,5 +1,7 @@
 # Hugging Chat Python
 
+**Warn**: This repo isn't maintained anymore. Use [Soulter/hugging-chat-api](https://github.com/Soulter/hugging-chat-api) instead.
+
 ## Installation
 
 ### As library
